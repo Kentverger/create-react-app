@@ -25,7 +25,7 @@ if (!publicPath.endsWith('/')) {
 module.exports = {
   bail: true,
   devtool: 'source-map',
-  entry: path.join(paths.appSrc, 'index'),
+  entry: ['babel-polyfill', path.join(paths.appSrc, 'index')],
   output: {
     path: paths.appBuild,
     filename: '[name].[chunkhash].js',
