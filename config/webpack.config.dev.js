@@ -12,6 +12,7 @@ var autoprefixer = require('autoprefixer');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var paths = require('./paths');
+require("babel-polyfill");
 
 module.exports = {
   devtool: 'eval',
